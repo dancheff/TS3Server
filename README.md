@@ -23,7 +23,7 @@ Change the user variables if necessary
 
 Make the script executable
                                        
-chmod a+x ts3server.sh
+```chmod a+x ts3server.sh```
 
 Run the script
 
