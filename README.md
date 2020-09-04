@@ -2,14 +2,19 @@
 Auto Install the Linux TeamSpeak 3 Server on Debian / Ubuntu / Centos
 
 What this script does:
-Creates a new user to run the TeamSpeak 3 Server
-Downloads and installs the server
-Creates a systemd service
+
+***Creates a new user to run the TeamSpeak 3 Server***
+***Downloads and installs the server***
+***Creates a systemd service***
+
 Starts the server
+
 How to use:
+
 Download or copy the script and paste it into a new file
 
 wget 
+
 Change the user variables if necessary
 
 nano ts3server.sh
