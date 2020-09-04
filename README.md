@@ -14,8 +14,6 @@
 
 Download or copy the script and paste it into a new file
 
-```wget ```
-
 Change the user variables if necessary
 
 ```nano ts3server.sh```
