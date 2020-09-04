@@ -3,13 +3,13 @@
 
 **What this script does:**
 
-*Creates a new user to run the TeamSpeak 3 Server*
+✔ Creates a new user to run the TeamSpeak 3 Server
 
-*Downloads and installs the server*
+✔ Downloads and installs the server
 
-*Creates a systemd service*
+✔ Creates a systemd service 
 
-*Starts the server
+✔ Starts the server
 
 **How to use:**
 
