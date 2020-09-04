@@ -44,7 +44,7 @@ rm -rf teamspeak3-server_linux*.tar.bz2 teamspeak3-server_linux*/
 }
 
 # add the user to run ts3server
-if adduser --system --group --no-create-home "$TS3_USER" >/dev/null 2>&1; then  # If you use Centos OS, just delete --group from this row
+if adduser --system --group --no-create-home "$TS3_USER" >/dev/null 2>&1; then  # If you use Centos OS, just delete '--group' from this row
   echo -e "\nAdded new user: '$TS3_USER'"
 else
   echo -e "\n ERROR!!! Failed to add new user: '$TS3_USER'\n"
