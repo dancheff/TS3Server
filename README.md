@@ -1,5 +1,4 @@
-# TS3Server
-**Auto Install the Linux TeamSpeak 3 Server on Debian / Ubuntu / Centos**
+# Auto Install the Linux TeamSpeak 3 Server on Debian / Ubuntu / Centos
 
 **What this script does:**
 
