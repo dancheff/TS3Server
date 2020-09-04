@@ -1,5 +1,5 @@
 #!/bin/bash
-# Name: install_ts3-server.sh
+# Name: ts3server.sh
 # Created By: dancheff
 # Description: Automagically installs the Linux TeamSpeak 3 Server
 # Tested on: Ubuntu 18.04/20.04 / Debian 9/10 / Centos 7/8
