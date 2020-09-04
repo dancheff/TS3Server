@@ -10,6 +10,7 @@
 *Creates a systemd service*
 
 **Starts the server**
+
 **How to use:**
 
 **Download or copy the script and paste it into a new file**
@@ -20,10 +21,13 @@ wget
 
 nano ts3server.sh
 **Make the script executable**
+                                       
 chmod a+x ts3server.sh
 
 **Run the script**
+
 sudo .ts3server.sh
 
 **To start, stop, restart, or check the status of the ts3-server use**
+
 sudo systemctl {start|stop|restart|status} ts3server 
