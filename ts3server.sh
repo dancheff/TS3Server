@@ -4,13 +4,13 @@
 # Description: Automagically installs the Linux TeamSpeak 3 Server
 # Tested on: Ubuntu 18.04/20.04 / Debian 9/10 / Centos 7/8
 
-# ==> VARIABLES <==
+# VARIABLES
 # user to run the ts3server and where to install it
 TS3_USER="teamspeak3"
 TS3_DIR="/home/ts3server"
 TS3_VER="3.12.1"
 
-# ==> MAIN PROGRAM <==
+# MAIN PROGRAM
 set -e # exit with a non-zero status when there is an uncaught error
 
 # are we root?
@@ -33,6 +33,14 @@ elif [ "$A" = "i686" ]; then
   URL="$X86"
 fi
 
+# add the user to run ts3server
+if adduser --system --group --no-create-home "$TS3_USER" >/dev/null 2>&1; then  # If you use Centos OS, just delete '--group' from this row
+  echo -e "\nAdded new user: '$TS3_USER'"
+else
+  echo -e "\n ERROR!!! Failed to add new user: '$TS3_USER'\n"
+  exit 1
+fi
+
 # functions
 function ts3server {
 mkdir -p "$TS3_DIR"
@@ -42,14 +50,6 @@ mv teamspeak3-server_linux*/* "$TS3_DIR"
 chown "$TS3_USER":"$TS3_USER" "$TS3_DIR" -R
 rm -rf teamspeak3-server_linux*.tar.bz2 teamspeak3-server_linux*/
 }
-
-# add the user to run ts3server
-if adduser --system --group --no-create-home "$TS3_USER" >/dev/null 2>&1; then  # If you use Centos OS, just delete '--group' from this row
-  echo -e "\nAdded new user: '$TS3_USER'"
-else
-  echo -e "\n ERROR!!! Failed to add new user: '$TS3_USER'\n"
-  exit 1
-fi
 
 # download and install the ts3server
 echo "Installing the TeamSpeak 3 server to: '$TS3_DIR'"
