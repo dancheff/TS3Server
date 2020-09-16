@@ -7,7 +7,7 @@
 # VARIABLES
 # user to run the ts3server and where to install it
 TS3_USER="teamspeak3"
-TS3_DIR="/home/ts3server"
+TS3_DIR="/home/teamspeak3"
 TS3_VER="3.12.1"
 
 # MAIN PROGRAM
