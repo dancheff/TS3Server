@@ -24,8 +24,8 @@ Make the script executable
 
 Run the script
 
-```sudo ./ts3server.sh```
+```./ts3server.sh```
 
 To start, stop, restart, or check the status of the ts3server use
 
-```sudo systemctl {start|stop|restart|status} ts3server```
+```systemctl {start|stop|restart|status} ts3server```
