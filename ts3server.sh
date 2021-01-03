@@ -8,7 +8,7 @@
 # user to run the ts3server and where to install it
 TS3_USER="teamspeak3"
 TS3_DIR="/home/teamspeak3"
-TS3_VER="3.12.1"
+TS3_VER="3.13.3"
 
 # MAIN PROGRAM
 set -e # exit with a non-zero status when there is an uncaught error
@@ -19,7 +19,7 @@ if  [ "$EUID" -ne 0 ]; then
   exit 1
 fi
 
-# official download urls - updated on: 04.09.20
+# official download urls - updated on: 03.01.21
 X86="https://files.teamspeak-services.com/releases/server/$TS3_VER/teamspeak3-server_linux_x86-$TS3_VER.tar.bz2"
 X64="https://files.teamspeak-services.com/releases/server/$TS3_VER/teamspeak3-server_linux_amd64-$TS3_VER.tar.bz2"
 
