@@ -53,7 +53,7 @@ rm -rf teamspeak3-server_linux*.tar.bz2 teamspeak3-server_linux*/
 
 # download and install the ts3server
 echo "Installing the TeamSpeak 3 server to: $TS3_DIR"
-if [ wget -q "$URL" ]; then
+if wget -q "$URL"; then
   ts3server
 else
   echo -e "\n ERROR!!! Failed to download the TeamSpeak 3 server\n"
