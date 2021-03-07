@@ -35,9 +35,9 @@ fi
 
 # add the user to run ts3server
 if adduser --system --group --no-create-home "$TS3_USER" >/dev/null 2>&1; then  # If you use Centos OS, just delete '--group' from this row
-  echo -e "\nAdded new user: '$TS3_USER'"
+  echo -e "\nAdded new user:  $TS3_USER"
 else
-  echo -e "\n ERROR!!! Failed to add new user: '$TS3_USER'\n"
+  echo -e "\n ERROR!!! Failed to add new user: $TS3_USER\n"
   exit 1
 fi
 
@@ -52,8 +52,8 @@ rm -rf teamspeak3-server_linux*.tar.bz2 teamspeak3-server_linux*/
 }
 
 # download and install the ts3server
-echo "Installing the TeamSpeak 3 server to: '$TS3_DIR'"
-if wget -q "$URL"; then
+echo "Installing the TeamSpeak 3 server to: $TS3_DIR"
+if [ wget -q "$URL ]"; then
   ts3server
 else
   echo -e "\n ERROR!!! Failed to download the TeamSpeak 3 server\n"
@@ -121,7 +121,7 @@ sleep 5
 EXTERNAL_IP=$(wget -qO - http://geoip.ubuntu.com/lookup | sed -n -e 's/.*<Ip>\(.*\)<\/Ip>.*/\1/p')
 IMPORTANT=$(cat "$TS3_DIR"/logs/ts3server_* | grep -P -o "token=[a-zA-z0-9+]+")
 echo "$IMPORTANT" > "$TS3_DIR"/ServerAdmin_Privilege_Key.txt # save the ServerAdmin Privilege Key for easy future reference
-echo -e "\nServerAdmin info saved to: '$TS3_DIR/ServerAdmin_Privilege_Key.txt'"
+echo -e "\nServerAdmin info saved to: $TS3_DIR/ServerAdmin_Privilege_Key.txt"
 echo -e "ServerAdmin Privilege Key: $IMPORTANT\n"
 echo -e "Completed! You should probably configure the server now\nUse the desktop client for easy administration\n"
 echo -e "Your servers external IP Address is: $EXTERNAL_IP\n"
