@@ -126,3 +126,4 @@ echo -e "ServerAdmin Privilege Key: $IMPORTANT\n"
 echo -e "Completed! You should probably configure the server now\nUse the desktop client for easy administration\n"
 echo -e "Your servers external IP Address is: $EXTERNAL_IP\n"
 exit 0
+ 
