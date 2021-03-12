@@ -12,23 +12,35 @@
 
 ## **How to use:**
 
-Download or copy the script and paste it into a new file
+## Download the script
+```bash
+git clone https://github.com/dancheff/TS3Server.git
+cd TS3Server
+```
 
 ## Change the user variables if necessary
 
-```nano ts3server.sh```
+```bash
+nano ts3server.sh
+```
 
 ## Make the script executable
                                        
-```chmod a+x ts3server.sh```
+```bash
+chmod a+x ts3server.sh
+```
 
 ## Run the script
 
-```./ts3server.sh```
+```bash
+./ts3server.sh
+```
 
 ## To start, stop, restart, or check the status of the ts3server use
 
-```systemctl {start|stop|restart|status} ts3server```
+```bash
+systemctl {start|stop|restart|status} ts3server
+```
 
 ## Bugs & Issues
 Please feel free to report any bugs or issues to us, email to: dancheff.valentin@gmail.com or [open issue](http://github.com/dancheff/TS3Server/issues) on Github.
