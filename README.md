@@ -43,4 +43,4 @@ systemctl {start|stop|restart|status} ts3server
 ```
 
 ## Bugs & Issues
-Please feel free to report any bugs or issues to us, email to: dancheff.valentin@gmail.com or [open issue](http://github.com/dancheff/TS3Server/issues) on Github.
+Please feel free to report any bugs or issues to us, email to: valentin@dancheff.com or [open issue](http://github.com/dancheff/TS3Server/issues) on Github.
