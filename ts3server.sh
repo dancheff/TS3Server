@@ -8,7 +8,7 @@
 # user to run the ts3server and where to install it
 TS3_USER="teamspeak3"
 TS3_DIR="/home/teamspeak3"
-TS3_VER="3.13.3"
+TS3_VER="3.13.6"
 
 # MAIN PROGRAM
 set -e # exit with a non-zero status when there is an uncaught error
